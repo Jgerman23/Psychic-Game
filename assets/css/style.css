@@ -1,0 +1,36 @@
+body{
+    margin: 0; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/4996716/580/387/m1/fpnw/wm0/antique-circus-preview-3-.jpg?1536037465&s=f65e32f49c9a4d1f71c523defac3b55b);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 244px;   
+}
+
+header{
+    background-color:;
+    margin-top: 0; 
+    text-align: center;
+    padding: 5px;
+
+}
+
+h1{
+    font-family: 'Ewert', cursive;
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+p{
+    font-family: 'Rye', cursive;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+
+section{
+    margin: auto;
+    color: white;
+    width: 640px;
+    padding: 30px;
+}
