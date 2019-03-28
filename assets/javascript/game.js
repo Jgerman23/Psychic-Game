@@ -16,6 +16,7 @@ var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l',
 var wins = 0;
 var losses = 0;
 var guesses = 10;
+var guessedLetter = [];
 
 document.onkeyup = function(event) {
 
@@ -26,13 +27,16 @@ document.onkeyup = function(event) {
     if (userGuess === computerGuess){
         wins++;
         guesses = 10;
+        guessedLetter = [];
     }else {
         guesses--;
+
     }
 
     if (guesses === 0){
         losses++;
         guesses = 10;
+        guessedLetter = [];
     }
 
 
@@ -40,6 +44,12 @@ document.onkeyup = function(event) {
     document.getElementById("wins").innerHTML = "Wins: " + wins;
     document.getElementById("losses").innerHTML = "Losses: " + losses;
     document.getElementById("guesses").innerHTML = "Guesses Left: " + guesses;
-}
+
+    guessedLetter.push(userGuess);
+    document.getElementById("letters").innerHTML = "Letters Guessed: " + guessedLetter;
+    
+    
+};
+
 
 
