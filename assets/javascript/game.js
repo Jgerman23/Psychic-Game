@@ -21,6 +21,8 @@ var guessedLetter = [];
 document.onkeyup = function(event) {
 
     var userGuess = event.key;
+
+    if (event.which <= 90 && event.which >= 58){
     
     var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 
@@ -38,6 +40,7 @@ document.onkeyup = function(event) {
         guesses = 10;
         guessedLetter = [];
     }
+}
 
 
 
